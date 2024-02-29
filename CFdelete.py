@@ -43,7 +43,7 @@ rule_list = {}
 
 #function to delete rule id and add to dleted rules dict
 def cloudflare_delete(rule_id):
-    CLOUDFLARE_API_TOKEN = '770333a762f91308f3209d414d5e214950839'
+    CLOUDFLARE_API_TOKEN = ''
     headers = {
         'Content-Type': 'application/json',
         'X-Auth-Email': 'security@kajabi.com',
