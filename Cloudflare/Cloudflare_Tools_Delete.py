@@ -46,7 +46,7 @@ def cloudflare_delete(rule_id):
     CLOUDFLARE_API_TOKEN = ''
     headers = {
         'Content-Type': 'application/json',
-        'X-Auth-Email': 'security@kajabi.com',
+        'X-Auth-Email': '<your auth email>',
         'X-Auth-Key': f'{CLOUDFLARE_API_TOKEN}'
     }
     delete_request = requests.delete(f'{ENDPOINT}/zones/{Zone_ID}/firewall/access_rules/rules/{rule_id}',

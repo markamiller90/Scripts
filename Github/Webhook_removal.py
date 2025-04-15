@@ -3,6 +3,7 @@ import requests
 
 gh = github3.login('user-name', 'PAT token')
 org = gh.organization("ORG NAME")
+Company = '<Your company name here>'
 repos = [
     """add list of repos here in an array for example
     'frontend',
@@ -15,7 +16,7 @@ for repo in repos:
     'X-GitHub-Api-Version': '2022-11-28',
     })
 
-    response = (requests.get(f'https://api.github.com/repos/Kajabi/{repo}/hooks', headers=headers))
+    response = (requests.get(f'https://api.github.com/repos/{Company}/{repo}/hooks', headers=headers))
     response = response.json()
 
     for resp in response:

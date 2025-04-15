@@ -5,7 +5,7 @@ ENDPOINT = 'https://api.cloudflare.com/client/v4/'
 
 headers = {
     'Content-Type': 'application/json',
-    'X-Auth-Email': 'security@kajabi.com',
+    'X-Auth-Email': '<your auth email>',
     'X-Auth-Key': f'{CLOUDFLARE_API_TOKEN}'
 }
 rule_id = [
